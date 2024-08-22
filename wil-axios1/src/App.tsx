@@ -10,20 +10,23 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-
-import Corps from './components/corps';
-import Form from './components/form';
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import './index.css'
-import React from 'react';
+import Connexion from "./components/connexion";
+import Login from "./components/login";
+
 
 const App = () => {
-  return (
-    <div className='bg-[#C8AB7D] flex mx-auto my-5 rounded-md w-[50%] h-[35rem] '>
-      <Corps/>
-      <Form/>
-    </div>
-  );
-};
-
+return(
+  <Router>
+      <Routes>
+        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/login" element={<Login/>} />
+      </Routes>
+    </Router>
+);
+}
+console.log(App)
 export default App;
+
 
