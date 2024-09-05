@@ -10,12 +10,13 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-import React from "react";
 import Form from "./form";
 import Corps from "./corps";
+import Navigation from "./navigation";
 const Connexion = () =>{ 
 return (
     <div className='bg-[#C8AB7D] flex mx-auto my-5 rounded-md w-[50%] h-[35rem] '>
+      <Navigation/>
       <Corps/>
       <Form/>
     </div>

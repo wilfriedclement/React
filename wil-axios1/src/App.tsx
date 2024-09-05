@@ -10,20 +10,18 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import './index.css'
+
+import { Switch } from "react-router-dom";
+import { BrowserRouter, Route, Router } from "react-router-dom";
 import Connexion from "./components/connexion";
-import Login from "./components/login";
-
-
 const App = () => {
 return(
-  <Router>
-      <Routes>
-        <Route path="/connexion" element={<Connexion />} />
-        <Route path="/login" element={<Login/>} />
-      </Routes>
-    </Router>
+  
+    <BrowserRouter>
+    <Switch>
+      <Route path="/src/components/connexion.tsx" element={"<Connexion/>"}/>
+    </Switch>
+    </BrowserRouter>
 );
 }
 console.log(App)
