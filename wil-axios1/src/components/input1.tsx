@@ -10,12 +10,11 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-import React from 'react';
 
 const Input1 = (props:any) => {
     return (
-        <div className='flex w-[25rem] border-[0.1rem] border-black  required   hover:border-[0.15rem]  h-[2.5rem] gap-[3rem] bg-white rounded-md ml-[5.5rem]'>
-            <input placeholder={props.placeholder} className={props.className} ></input>
+        <div className='flex w-[25rem] border-[0.1rem] border-black items-center justify-center ml-[12.5rem] required   hover:border-[0.15rem]  h-[2.5rem] gap-[3rem] bg-white rounded-md '>
+            <input placeholder={props.placeholder} className={props.className} type="password" ></input>
             {props.icon}
         </div>
     );

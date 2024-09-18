@@ -10,21 +10,17 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-
-import { Switch } from "react-router-dom";
-import { BrowserRouter, Route, Router } from "react-router-dom";
-import Connexion from "./components/connexion";
+import Form from "./components/form";
+import Corps from "./components/corps";
 const App = () => {
 return(
   
-    <BrowserRouter>
-    <Switch>
-      <Route path="/src/components/connexion.tsx" element={"<Connexion/>"}/>
-    </Switch>
-    </BrowserRouter>
+  <div className="flex w-[95%] h-full items-center justify-center bg-gray-500 mx-10">
+<Corps/>
+<Form/>
+  </div>
 );
 }
-console.log(App)
 export default App;
 
 

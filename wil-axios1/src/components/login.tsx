@@ -21,7 +21,6 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import  { useState } from 'react';
-import Navigation from './navigation';
 const Login = () => {
     const [click,setclick] = useState(false)
     const handleClick =()=>{
@@ -29,7 +28,6 @@ const Login = () => {
 };
     return (
         <div className='bg-[#C8AB7D] flex mx-auto my-5 rounded-md w-[50%] h-[35rem] '>
-    <Navigation/>
             <Corps/>
             <div className='w-[75%] h-full  bg-blue-600'>
             <IoHomeOutline size={25} className='ml-[33rem] mt-2 cursor-pointer'/>
@@ -44,7 +42,7 @@ const Login = () => {
              <div className='flex gap-4 justify-center mr-[14rem] m-5'><RiCloseCircleLine size={25} className='cursor-pointer' /><h1 className=' text-[1rem]'>Password strength</h1></div>
              <div className='flex gap-4 justify-center mr-[11.5rem]'><RiCloseCircleLine size={25} className='cursor-pointer' /> <h1 className=' text-[1rem]'>At least 10 characters</h1></div>
             <Button type={"button"} text={"Create Account"} className=" cursor-pointer rounded-md w-[25rem] h-[2.5rem] text-[1.5rem] translate-y-0 hover:animate-pulse bg-[#3C4328]"></Button>
-            <div className=' ml-24 mt-2'><h1 className='text-[1.1rem]'>Already have an account?<span className='hover:text-[#9B6A3B] cursor-pointer'>Create Acount</span></h1></div>
+            <div className=' ml-24 mt-2'><h1 className='text-[1.1rem]'>Already have an account?<span className='hover:text-[#9B6A3B] cursor-pointer'>Create Account</span></h1></div>
             <div className='flex gap-3 justify-center mt-4'><hr className='w-[11rem] mt-3 bg-gray-700 h-0.5 ' /><h1>Or</h1><hr className='w-[11rem] mt-3 h-0.5 bg-'/></div>
             <div className='flex gap-4 justify-center mt-5'>
             <div className='flex w-[12rem] border-black border-[0.1rem] rounded-md gap-2 py-1.5 px-2 h-[2.5rem] '>{<FaFacebook className='my-1 cursor-pointer' />}<h1 className='text-[0.9rem]'>Sign up with Facebook</h1></div>
@@ -54,5 +52,4 @@ const Login = () => {
         </div>
     );
 }
-console.log(Login)
 export default Login;
