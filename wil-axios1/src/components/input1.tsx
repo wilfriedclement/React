@@ -13,7 +13,7 @@
 
 const Input1 = (props:any) => {
     return (
-        <div className='flex w-[25rem] border-[0.1rem] border-black items-center justify-center ml-[12.5rem] required   hover:border-[0.15rem]  h-[2.5rem] gap-[3rem] bg-white rounded-md '>
+        <div className='flex w-[25rem] border-[0.1rem] border-black items-center justify-center ml-[1.3rem]  required   hover:border-[0.15rem]  h-[2.5rem] gap-[3rem] bg-white rounded-md '>
             <input placeholder={props.placeholder} className={props.className} type="password" ></input>
             {props.icon}
         </div>

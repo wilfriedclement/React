@@ -10,17 +10,24 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-import Form from "./components/form";
-import Corps from "./components/corps";
-const App = () => {
-return(
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/login'
+import Connexion from './components/connexion';
+
+function App() {
+  return (
   
-  <div className="flex w-[95%] h-full items-center justify-center bg-gray-500 mx-10">
-<Corps/>
-<Form/>
-  </div>
-);
+    <Router>
+      <Routes>
+      
+      <Route path="/" element={<Connexion/>} />
+      <Route path="/connexion" element={<Login/>} />
+        
+      </Routes>
+    </Router>
+  );
 }
+
 export default App;
 
 

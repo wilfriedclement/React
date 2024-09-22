@@ -14,7 +14,7 @@ import Form from "./form";
 import Corps from "./corps";
 const Connexion = () =>{ 
 return (
-    <div className='bg-[#C8AB7D] flex mx-auto my-5 rounded-md w-[50%] h-[35rem] '>
+    <div className='bg-[#C8AB7D] flex mx-auto  rounded-md w-[70%] h-[35rem] '>
       <Corps/>
       <Form/>
     </div>
